@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #10375c;
+    --primary-color-btn: #2e80ce;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
+
+/* ==COMON== */
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.main-btn {
+    display: inline-block;
+    background-color: var(--primary-color-btn);
+    width: 205px;
+    padding: 14px 0;
+    border: 1px solid var(--primary-color-btn);
+    border-radius: 999px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    color: #fff;
+    text-align: center;
+}
+
+/* @keyframes btn-sign-up-hover {
+    from {
+        background: transparent;
+        color: var(--primary-color);
+    }
+    to {
+        background: var(--primary-color);
+        color: #fff;
+    }
+} */
+
+/* @keyframes btn-sign-in-hover {
+    from {
+        color: #494949;
+    }
+    to {
+        color: var(--primary-color);
+        text-shadow: 1px 0 0 var(--primary-color);
+    }
+} */
+
+@keyframes main-btn-hover {
+    from {
+        background: var(--primary-color-btn);
+    }
+    to {
+        background: transparent;
+    }
+}
+/* @keyframes work-item-hover {
+    from {
+        border-color: #eaf6ff;
+    }
+    to {
+        border-color: var(--primary-color-btn);
+        transform: translateY(-16px);
+    }
+} */
+
+.main-btn:hover {
+    cursor: pointer;
+    /* animation: main-btn-hover 0.3s both; */
+    opacity: 0.8;
+}
+
+.line-clamp {
+    /* ====== GIOI HAN SO DONG HIEN THI ====== */
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /* ============== */
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+.heading {
+    color: #fff;
+    font-weight: 600;
+}
+.heading.hd1 {
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -1.4px;
+}
+.heading.hd2 {
+    font-size: 5rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+.section__desc {
+    width: 470px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+/* control */
+.control {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #575f66;
+    border-radius: 50%;
+    background: transparent;
+    color: #575f66;
+}
+.control-btn:hover {
+    border-color: var(--primary-color-btn);
+    background: var(--primary-color-btn);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
