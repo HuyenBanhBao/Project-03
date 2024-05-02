@@ -11,6 +11,7 @@
 .header-top {
     padding-top: 30px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -66,10 +67,6 @@
 
 /* navbar */
 
-.navbar {
-    margin-left: auto;
-}
-
 .navbar__list {
     display: flex;
     gap: 42px;
@@ -104,10 +101,6 @@
     height: 6px;
     border-radius: 50%;
     background: #fff;
-}
-
-.navbar__action {
-    margin-left: 222px;
 }
 
 .nav-btn__signup {
